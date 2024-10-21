@@ -1,0 +1,185 @@
+* {
+    color: #14224E;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px;
+}
+@media (min-width: 500px) and (max-width: 650px) {
+    .container {
+        display: grid;
+        grid-template-columns: 15vw 80vw 5vw;
+        grid-template-rows: 80px auto 10vh;
+        height: 100vh;
+    }
+    #menuList {
+        margin: 10%;
+        float: right;
+    }
+    .menuElement a {
+        color: #FFE0C5;
+        display: block; 
+        padding: 12px;
+        text-decoration: none;
+    }
+    .blogPostDiv {
+        border: 2px solid #14224E;
+        border-radius: 20px;
+        margin: 10%;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        display: grid;
+        grid-template-columns: 12vw 88vw ;
+        grid-template-rows: 170px auto 10vw;
+        height: 100vh;
+    }
+    .menuElement {
+        float: none;
+        cursor: pointer;
+        text-align: center;
+        margin-left: 25%;
+        width: 50%;
+    }
+    .menuElement a {
+        color: #FFE0C5;
+        display: block; 
+        padding: 8px;
+        text-decoration: none;
+    }
+    .blogPostDiv {
+        border: 2px solid #14224E;
+        border-radius: 20px;
+        margin: 15%;
+    }
+}
+@media (min-width: 650px) {
+    .container {
+        display: grid;
+        grid-template-columns: 10vw 80vw 10vw;
+        grid-template-rows: 70px auto 10vw;
+        height: 100vh;
+    }
+    .menuElement a {
+        color: #FFE0C5;
+        display: block; 
+        padding: 16px;
+        text-decoration: none;
+    }
+    .blogPostDiv {
+        border: 2px solid #14224E;
+        border-radius: 20px;
+        margin-bottom: 5%;
+        margin-top: 1%;
+    }
+}
+
+button:hover {
+    color: #FF4A4A;
+}
+
+#header {
+    grid-column: 1/4;
+    grid-row: 1;
+    background-color:#FF4A4A;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 10vw 90vw;
+}
+
+.logo{
+    cursor: pointer;
+    grid-column: 1;
+}
+
+#menuDiv {
+    grid-column: 2;
+    height: 70px;
+}
+
+#asideLeft {
+    background-color: #FFF5E0;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#main {
+    background-color: #FFF5E0;
+    grid-column: 2;
+    grid-row:2;
+    text-align: center;
+    padding: 5%;
+    padding-top: 5%;
+}
+
+#asideRight {
+    background-color: #FFF5E0;
+    grid-column: 3;
+    grid-row: 2;
+    padding: 10%;
+}
+
+#footer {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    grid-column: 1/4;
+    grid-row: 3;
+    background-color: #BC3E3E;
+}
+
+#footerMotto {
+    color: #14224E; 
+    font-size: 15px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+button{
+    color: #FFE0C5;
+    background-color: #14224E;
+    font-weight: bold;
+    border: 5px solid #14224E;
+    border-radius: 12px;
+}
+
+.menuElement a:hover {
+    color: #BC3E3E;
+}
+
+.menuElement {
+    float: left;
+    cursor: pointer;
+    margin-right: 2vw;
+    background-color: #14224E;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.menuElement:hover {
+    background-color: #BC3E3E; /* Ändrar bakgrundsfärgen vid hover */
+}
+
+.menuElement:hover a {
+    color: #14224E; /* Ändrar textfärgen till vit vid hover */
+}
+
+#menuList {
+    margin: 10%;
+}
+
+
+
+#header ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+    overflow: hidden;
+    /* This is to make the background transparent, the last one alpha will turn it transparent*/
+    background-color: rgba(255, 0, 0, 0);
+    text-align: right;
+}
+
+#logoImage {
+    border-radius: 50%;
+}

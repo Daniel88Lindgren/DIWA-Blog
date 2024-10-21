@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/baseStyle.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/blogPostsStyle.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/homeStyle.css"/>
+    <link rel="icon" type="image/png" href="images/diwa.png">
+    <title>Home</title>
+</head>
+<body id="diwaBody">
+    <div class="container">
+        <div id="header">
+            <div class="logo" id="homePage">
+                <a href="homePage.html"> <img id="logoImage" src="images/diwa.png" alt="Diwa" height="120vw" width="120vw"> </a>
+            </div>
+            <div id="menuDiv">
+                <ul id="menuList">
+                    <li class="menuElement"><a href="about.html">About</a></li>
+                    <li class="menuElement"><a href="homePage.html">Home</a></li>
+                    <li class="menuElement"><a href="loginPage.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="asideLeft">
+        </div>
+        <div id="main">
+            <div id="sortControls">
+                <select id="sortSelect">
+                    <option class="options" value="user">User</option>
+                    <option value="dateNewest">Newest</option>
+                    <option class="options" value="dateOldest">Oldest</option>
+                </select>
+                <button id="sortPosts">Apply Sort</button>
+            </div>
+            <div id="blogPosts"></div>
+            <div id="nextPageDiv">
+                <ul id="choosePageList"></ul>
+            </div>
+        </div>
+        <div id="asideRight">
+        </div>
+        <div id="footer">
+            <span id="footerMotto"></span>
+        </div>
+    </div>
+    <script src="scripts/homePage.js"></script>
+    <script src="scripts/footerMotto.js"></script>
+</body>
+</html>

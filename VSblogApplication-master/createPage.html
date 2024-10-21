@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/baseStyle.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/createPostPage.css"/>
+    <link rel="icon" type="image/png" href="images/diwa.png">
+    <title>Create</title>
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <div class="logo" id="homePage">
+                <a href="homePageAdmin.html"> <img id="logoImage" src="images/diwa.png" alt="Diwa" height="120vw" width="120vw"> </a>
+            </div>
+            <div id="menuDiv">
+                <ul id="menuList">
+                    <li class="menuElement"><a href="about.html">About</a></li>
+                    <li class="menuElement"><a href="createPage.html">Create post</a></li>
+                    <li class="menuElement"><a href="homePage.html">View everyones posts</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="asideLeft"></div>
+        <div id="main">
+            <h1>Create new blogpost</h1><br><br>
+            <div class="formDiv">
+                <form class="createPost">
+                    <label for="title" style="font-size: 18px;">Title:</label><br>
+                    <input id="title" name="title" type="text" required/><br><br>
+                    <label for="textContent" style="font-size: 18px;">Text content:</label><br>
+                    <textarea id="textContent" name="textContent" type="text" required oninput="auto_grow(this)"></textarea><br><br>
+                    <button id="createButton">Submit</button>
+                    <button id="goBackButton">Go back</button>
+                </form><br>
+            </div>
+        </div>
+        <div id="asideRight">
+        </div>
+        <div id="footer">
+            <span id="footerMotto"></span>
+        </div>
+    </div>
+    <script src="scripts/footerMotto.js"></script>
+    <script src="scripts/createPage.js"></script> 
+</body>
+</html>

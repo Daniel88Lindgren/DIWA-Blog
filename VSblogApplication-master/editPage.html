@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/baseStyle.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/createPostPage.css"/>
+    <link rel="icon" type="image/png" href="images/diwa.png">
+    <title>Edit</title>
+</head>
+<body onload="getBlogPost()">
+    <div class="container">
+        <div id="header">
+            <div class="logo" id="homePage">
+                <a href="homePageAdmin.html"> <img id="logoImage" src="images/diwa.png" alt="Diwa" height="120vw" width="120vw"> </a>
+            </div>
+            <div id="menuDiv">
+                <ul id="menuList">
+                    <li class="menuElement"><a href="about.html">About</a></li>
+                    <li class="menuElement"><a href="createPage.html">Create post</a></li>
+                    <li class="menuElement"><a href="homePage.html">View everyones posts</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="asideLeft">
+            <p></p>
+        </div>
+        <div id="main">
+            <h1>Edit blogpost</h1><br><br>
+            <div class="formDiv">
+                <form class="createPost">
+                    <label for="title">Title:</label><br>
+                    <input id="title" name="title" type="text" required/><br><br>
+                    <label>Text content:</label><br>
+                    <textarea id="textContent" name="textContent" type="text" required style="overflow-y: scroll;"></textarea><br><br>
+                    <button id="updateButton">Update post</button>
+                    <button id="goBackButton">Go back</button>
+                </form><br>
+            </div>
+        </div>
+        <div id="asideRight">
+        </div>
+        <div id="footer">
+            <span id="footerMotto"></span>
+        </div>
+    </div>
+    <script src="scripts/footerMotto.js"></script>
+    <script src="scripts/editPage.js"></script>
+</body>
+</html>
