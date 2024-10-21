@@ -1,4 +1,4 @@
-*This instruction is to get the blog application up and running with frontend, backend and database.
+- This instruction is to get the blog application up and running with frontend, backend and database.
 
 *Frontend runs in VS Code.
 *Backend runs in IntelliJ.
